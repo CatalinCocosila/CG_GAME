@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyOnEnd : MonoBehaviour
+public class DestroyOnAnimationEnd : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float delay;
+
+
     void Start()
     {
-        
+        Destroy(gameObject, GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
