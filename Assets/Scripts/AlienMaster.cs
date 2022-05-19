@@ -27,7 +27,7 @@ public class AlienMaster : MonoBehaviour
 
     private bool movingRight;
 
-    public static List<GameObject> allAliens = new List<GameObject>;
+    public static List<GameObject> allAliens = new List<GameObject>();
 
     void Start()
     {

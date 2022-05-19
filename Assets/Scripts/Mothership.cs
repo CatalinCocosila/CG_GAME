@@ -11,13 +11,13 @@ public class Mothership : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(Vector2.left * time.deltaTime * speed);
+        transform.Translate(Vector2.left * Time.deltaTime * speed);
 
         if (transform.position.x <= MAX_LEFT)
             Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Colision2D colision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
 
     }

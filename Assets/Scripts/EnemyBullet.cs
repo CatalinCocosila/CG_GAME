@@ -9,10 +9,10 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(vector2.down * Time.deltaTime * speed);
+        transform.Translate(Vector2.down * Time.deltaTime * speed);
     }
 
-    private void OnCollisionEnter2D(Colision2D colision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
 
     }

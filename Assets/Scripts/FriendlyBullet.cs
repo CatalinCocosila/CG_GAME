@@ -15,11 +15,21 @@ public class FriendlyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(vector2.up * Time.deltaTime * speed);
+        transform.Translate(Vector2.up * Time.deltaTime * speed);
     }
 
-    private void OnCollisionEnter2D(Colision2D colision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.CompareTag("Alien"))
+        {
+            collision.gameObject.GetComponent<Alien>().Kill();
+            Destroy(gameObject);    
+        }
 
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

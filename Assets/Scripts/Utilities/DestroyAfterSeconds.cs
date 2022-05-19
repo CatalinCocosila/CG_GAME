@@ -8,6 +8,6 @@ public class DestroyAfterSeconds : MonoBehaviour
 
     void Start()
     {
-        Destroy(GameObject, seconds);
+        Destroy(gameObject, seconds);
     }
 }

@@ -33,8 +33,8 @@ public class Player : MonoBehaviour
     private IEnumerator Shoot()
     {
         isShooting = true;
-        Instantiate(bulletPrefab, transform.position, Quaterntion.identity);
-        yeld return new WaitForSeconds(cooldown);
+        Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(cooldown);
         isShooting = false;
     }
 }
