@@ -43,7 +43,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4644321855393387078}
   - component: {fileID: 9215689250126317714}
-  - component: {fileID: 5302957739251987914}
+  - component: {fileID: 2803389641778017549}
+  - component: {fileID: 8122154440701380206}
   m_Layer: 0
   m_Name: Block_Right_00
   m_TagString: Untagged
@@ -118,19 +119,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5302957739251987914
-BoxCollider:
+--- !u!61 &2803389641778017549
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4460247703554635893}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09337342, y: -0.12358248}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.80033827, y: 0.75335896, z: 0.2}
-  m_Center: {x: -0.099830866, y: -0.12332052, z: 0}
+  m_Size: {x: 0.81325316, y: 0.75283504}
+  m_EdgeRadius: 0
+--- !u!114 &8122154440701380206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4460247703554635893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6004b1daf831b4d438370acf40b7a929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - {fileID: -856572439, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: 675622794, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: 1489596377, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: 62571799, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
 --- !u!1 &8200332972690425267
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +172,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2627244803168137454}
   - component: {fileID: 1512954522179422318}
-  - component: {fileID: 2875285655590158270}
+  - component: {fileID: 1357152988131653232}
+  - component: {fileID: 3717639764893357625}
   m_Layer: 0
   m_Name: Block_Left_00
   m_TagString: Untagged
@@ -216,16 +248,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2875285655590158270
-BoxCollider:
+--- !u!61 &1357152988131653232
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8200332972690425267}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0933733, y: -0.12358248}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.81402874, y: 0.7499003, z: 0.2}
-  m_Center: {x: 0.09298563, y: -0.12504986, z: 0}
+  m_Size: {x: 0.8132534, y: 0.75283504}
+  m_EdgeRadius: 0
+--- !u!114 &3717639764893357625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8200332972690425267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6004b1daf831b4d438370acf40b7a929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - {fileID: 1607782616, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: -74134902, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: 840809412, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
+  - {fileID: 1110680240, guid: bb5c29a6f341fab479662c55b35f7668, type: 3}
