@@ -10,17 +10,20 @@ public class Player : MonoBehaviour
     private Vector2 offScreenPos = new Vector2(0, -20f);
     private Vector2 startPos = new Vector2(0, -4.5f);
 
-    private const float MAX_LEFT = -3.4f;
-    private const float MAX_RIGHT = 3.4f;
+    private const float MAX_LEFT = -3.1f;
+    private const float MAX_RIGHT = 3.1f;
 
     private bool isShooting;
 
     void Start()
     {
         shipStats.currentHealth = shipStats.maxHealth;
-        shipStats.currentLifes = shipStats.maxLifes;
+        shipStats.currentLives = shipStats.maxLives;
 
         transform.position = startPos;
+
+        //UIManager.UpdateHealthbar(shipStats.currentHealth);
+        //UIManager.UpdateLives(shipStats.currentLives);
     }
 
     // Update is called once per frame
@@ -41,12 +44,14 @@ public class Player : MonoBehaviour
     private void TakeDamage()
     {
         shipStats.currentHealth--;
+        //UIManager.UpdateHealthbar(shipStats.currentHealth); 
 
         if(shipStats.currentHealth <= 0)
         {
-            shipStats.currentLifes--;
+            shipStats.currentLives--;
+            //UIManager.UpdateLives(shipStats.currentLives);
 
-            if(shipStats.currentLifes <= 0)
+            if(shipStats.currentLives <= 0)
             {
                 Debug.Log("GAME OVER");
                 //Game Over

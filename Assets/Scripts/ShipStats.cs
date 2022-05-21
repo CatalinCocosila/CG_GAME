@@ -11,9 +11,9 @@ public class ShipStats
     [HideInInspector]
     public int currentHealth;
     [HideInInspector]
-    public int maxLifes = 3;
+    public int maxLives = 3;
     [HideInInspector]
-    public int currentLifes = 3;
+    public int currentLives = 3;
 
     public float shipSpeed;
     public float fireRate;
