@@ -23,8 +23,8 @@ public class SaveManager : MonoBehaviour
     {
         SaveObject so = new SaveObject();
 
-        so.coins = Inventory.currentCoins;
-        so.highscore = UIManager.GetHighScore();
+        //so.coins = Inventory.currentCoins;
+        //so.highscore = UIManager.GetHighScore();
         so.shipStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().shipStats;
     }
 

@@ -31,10 +31,10 @@ public static class SaveLoad
         {
             try
             {
-                BinaryFormatter bf = BinaryFormatter();
+                BinaryFormatter bf = new BinaryFormatter();
                 FileStream file = File.Open(GetSavePath(), FileMode.Open);
                 so = (SaveObject)bf.Deserialize(file);
-                file.Close;
+                file.Close();
             }
             catch (SerializationException)
             {
