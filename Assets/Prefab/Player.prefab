@@ -156,6 +156,6 @@ MonoBehaviour:
     currentHealth: 0
     maxLives: 3
     currentLives: 3
-    shipSpeed: 0.47
-    fireRate: 0.15
+    shipSpeed: 0
+    fireRate: 0
   bulletPrefab: {fileID: 5838222524139008211, guid: d75f45da9eeb41b44a9f9600075fd5ac, type: 3}
