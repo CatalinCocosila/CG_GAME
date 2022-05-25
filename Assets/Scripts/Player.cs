@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             if(shipStats.currentLives <= 0)
             {
                 Debug.Log("GAME OVER");
-                //Game Over
+                SaveManager.SaveProgress();
             }
             else
             {
